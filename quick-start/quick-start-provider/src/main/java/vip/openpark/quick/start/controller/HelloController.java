@@ -28,7 +28,7 @@ public class HelloController implements IHelloService {
 		return "hello " + name;
 	}
 
-	@GetMapping("hello4GatewayFilter")
+	@GetMapping("quick-start-provider/hello4GatewayFilter")
 	public String hello4GatewayFilter(HttpServletRequest request, HttpServletResponse response) {
 		log.info("-------------------------------------------------------");
 		// 获取所有 request header 名称
@@ -59,12 +59,12 @@ public class HelloController implements IHelloService {
 		return "hello4GatewayFilter " + LocalDateTime.now();
 	}
 
-	@GetMapping("hello4GatewayFilterPath")
+	@GetMapping("quick-start-provider/hello4GatewayFilterPath")
 	public String hello4GatewayFilterPath(HttpServletRequest request, HttpServletResponse response) {
 		return "hello4GatewayFilterPath " + LocalDateTime.now();
 	}
 
-	@GetMapping("hello4GatewayFilterRedirectTo")
+	@GetMapping("quick-start-provider/hello4GatewayFilterRedirectTo")
 	public String hello4GatewayFilterRedirectTo(HttpServletRequest request, HttpServletResponse response) {
 		return "hello4GatewayFilterRedirectTo " + LocalDateTime.now();
 	}
