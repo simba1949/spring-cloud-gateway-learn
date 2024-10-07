@@ -68,4 +68,9 @@ public class HelloController implements IHelloService {
 	public String hello4GatewayFilterRedirectTo(HttpServletRequest request, HttpServletResponse response) {
 		return "hello4GatewayFilterRedirectTo " + LocalDateTime.now();
 	}
+
+	@GetMapping("condition/hello4GatewayFilterFactory")
+	public String hello4GatewayFilterFactory(HttpServletRequest request, HttpServletResponse response) {
+		return "hello4GatewayFilterFactory " + LocalDateTime.now();
+	}
 }
